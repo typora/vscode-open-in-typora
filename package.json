@@ -1,15 +1,34 @@
 {
   "name": "typora-open-in-typora",
   "displayName": "Open in Typora",
-  "description": "Add a context menu action to open Markdown files in Typora.",
-  "version": "0.0.1",
-  "publisher": "local",
+  "description": "Add a context menu and action to open Markdown files in Typora.",
+  "version": "1.0.0",
+  "publisher": "typora.io",
   "license": "MIT",
+  "icon": "icon.png",
+  "homepage": "https://github.com/typora/vscode-open-in-typora",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/typora/vscode-open-in-typora.git"
+  },
+  "bugs": {
+    "url": "https://github.com/typora/vscode-open-in-typora/issues"
+  },
+  "galleryBanner": {
+    "color": "#F7F7F7",
+    "theme": "light"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
   "categories": [
     "Other"
+  ],
+  "keywords": [
+    "typora",
+    "markdown",
+    "md",
+    "editor"
   ],
   "activationEvents": [
     "onCommand:typora.openInTypora"
