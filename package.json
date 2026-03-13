@@ -1,0 +1,72 @@
+{
+  "name": "typora-open-in-typora",
+  "displayName": "Open in Typora",
+  "description": "Add a context menu action to open Markdown files in Typora.",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:typora.openInTypora"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "typora.openInTypora",
+        "title": "Typora: Open in Typora"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "typora.openInTypora",
+          "when": "resourceScheme == file && explorerResourceIsFolder == false",
+          "group": "navigation"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "typora.openInTypora",
+          "when": "resourceScheme == file",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Typora",
+      "properties": {
+        "typora.supportedExtensions": {
+          "type": "array",
+          "default": [
+            "md",
+            "markdown",
+            "mdown",
+            "mmd",
+            "text",
+            "txt",
+            "rmarkdown",
+            "mkd",
+            "mdwn",
+            "mdtxt",
+            "rmd",
+            "qmd",
+            "mdtext",
+            "mdx"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported file extensions for \"Open in Typora\". Use extensions without dot, e.g. md, markdown."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "echo 'No lint configured'"
+  }
+}
