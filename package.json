@@ -18,7 +18,8 @@
     "commands": [
       {
         "command": "typora.openInTypora",
-        "title": "Typora: Open in Typora"
+        "title": "Open in Typora",
+        "category": "Typora"
       }
     ],
     "menus": {
@@ -26,14 +27,14 @@
         {
           "command": "typora.openInTypora",
           "when": "resourceScheme == file && explorerResourceIsFolder == false",
-          "group": "navigation"
+          "group": "navigation@-100"
         }
       ],
       "editor/context": [
         {
           "command": "typora.openInTypora",
           "when": "resourceScheme == file",
-          "group": "navigation"
+          "group": "navigation@-100"
         }
       ]
     },
