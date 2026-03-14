@@ -2,7 +2,7 @@
   "name": "typora-open-in-typora",
   "displayName": "Typora: Open in Typora",
   "description": "Add a context menu and action to open Markdown files in Typora.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "typora",
   "license": "MIT",
   "icon": "icon.png",
