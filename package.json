@@ -61,6 +61,12 @@
     "configuration": {
       "title": "Typora",
       "properties": {
+        "typora.executablePath": {
+          "type": "string",
+          "default": "",
+          "scope": "machine",
+          "markdownDescription": "Full path to the Typora executable. Leave empty to keep the default behavior (Windows: `typora` via `cmd /c start`; macOS: `open -a Typora`; Linux: `typora` on `PATH`).\n\nWindows and most Linux installs do not put a `typora` command on `PATH`, which makes the default fail without any visible error. Point this at the executable to launch Typora directly, e.g. `D:\\Typora\\Typora.exe`, `/Applications/Typora.app` or `/opt/Typora/Typora`."
+        },
         "typora.supportedExtensions": {
           "type": "array",
           "default": [
